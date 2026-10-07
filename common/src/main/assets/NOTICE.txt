@@ -1,0 +1,100 @@
+DiPlay-H6 — 署名与开源许可声明
+Attribution and open-source notices
+==================================
+
+本文件是 DiPlay-H6 分发包的法定署名与许可声明。依据 GPL-3.0 第 7(b) 条，
+任何再分发必须完整保留本声明，不得删除、篡改或替换其中任何署名。
+Under GPL-3.0 section 7(b) these notices must be preserved verbatim in any
+redistribution. Removing, altering or substituting any attribution is
+prohibited.
+
+
+1. 上游项目
+-----------
+DiPlay — Independent CarPlay receiver for Android head units
+  https://github.com/shihabal3amri/DiPlay
+  许可: GNU General Public License v3.0 (GPL-3.0)
+
+xcertplay — 无线 CarPlay 接收端基础实现
+  https://github.com/shilapi/xcertplay
+  许可: GNU General Public License v3.0 (GPL-3.0)
+
+DiAuto — 首页与设置界面、官网样式来源
+  https://github.com/shihabal3amri/DiAuto
+  许可: GNU Affero General Public License v3.0 (AGPL-3.0-only)
+
+协议研究致谢: LIVI (https://github.com/f-io/LIVI)、
+Showcase (https://github.com/amineross/showcase)
+
+运行时依赖: AndroidX / Jetpack Compose (Apache-2.0)、Kotlin stdlib (Apache-2.0)、
+Bouncy Castle 1.79 (MIT-style)、JmDNS 3.6.3 (Apache-2.0)、SLF4J (MIT)
+
+
+2. 本适配版的署名
+-----------------
+哈弗 H6 国潮版（德赛西威车机）适配由 情深 独立完成。
+Haval H6 Guochao edition (Desay SV head unit) adaptation by 情深.
+
+该适配的署名权归 情深 所有。任何再分发必须原样保留"适配 by 情深"署名，
+不得删除、篡改、覆盖或替换为他人名义。
+
+未经 情深 书面许可，任何人不得以"情深适配版"、本项目或原作者名义
+进行销售、招商、代理招募或任何形式的商业宣传 (GPL-3.0 第 7(d) 条)。
+
+本适配版修改日期：2026-10-06
+(GPL-3.0 第 5(a) 条要求在修改版本上声明"已修改"及相关日期。)
+上游基线：DiPlay v0.2.11 (GPL-3.0)；首页与设置界面改编自 DiAuto
+(AGPL-3.0-only，见 docs/THIRD_PARTY_NOTICES.md)。
+
+
+3. 非 Apple 认证声明
+--------------------
+本软件未经 Apple 认证或授权，与 Apple Inc. 不存在任何关联、赞助或背书关系。
+APK 内置的配件身份为从公开固件中提取的实验性凭据，并非 Apple 为本项目签发
+的 MFi 身份，其中的私钥可被提取。该身份未来是否继续被 iOS 接受尚未确定，
+不保证长期可用。
+
+"CarPlay" 名称与 CarPlay 图标为 Apple Inc. 的商标与资产，不属于本项目
+开源代码许可范围，仅作功能指示使用。
+
+
+4. 担保与责任
+-------------
+本软件按"现状"提供，不提供任何明示或默示的担保，包括但不限于适销性、
+特定用途适用性及不侵权的担保。因使用或无法使用本软件导致的任何损失，
+由使用者自行承担。
+
+
+5. 源码获取
+-----------
+依据 GPL-3.0 第 6(d) 条，本 APK 与其完整对应源码同时提供。
+
+  源码包  DiPlay-H6-V3.0-source-<日期>.zip
+  大小    约 6 MB（1016 个文件，免密码、免注册、可直接解压）
+
+  >>> 请在此填入实际下载地址 <<<
+  >>> 例如：网盘链接、Git 仓库地址，或"联系发布者获取" <<<
+  >>> 免密码的 Git 公开/私有仓库，或任意直链下载均可 <<<
+
+分发者承诺：该源码获取途径自本包发布之日起至少三年内持续有效。
+源码包 SHA-256 校验值随包提供为 .sha256.txt，可用于验证完整性。
+
+分发者仅提供源码，不会因您索取源码而收回本 APK，也不会限制您依
+GPL-3.0 享有的任何权利 (第 6 条不要求收费提供源码；第 10 条明文禁止
+施加进一步限制)。
+
+下列内容不属于 GPL-3.0 第 1 条所定义的"对应源码"，故不在源码包内：
+  - Android APK 签名密钥 (keystore)。签名不改变源代码本身，
+    接收者可自行使用任意密钥重新构建。
+  - Apple MFi 配件身份凭据 (identity.pk8 / certificate.p7b)。
+    该凭据为 Apple/Carlinkit 私有资产，非本项目源代码，
+    亦未被本项目重新许可。已在第 3 节如实说明。
+  - 构建者的本机路径配置 (local.properties) 与构建产物目录。
+    接收者按 docs/BUILD.md 自行创建即可。
+
+
+6. 使用范围声明
+---------------
+本分发包面向哈弗 H6 车主社群内部个人使用。请勿转手倒卖。
+(本条为声明性要求；依据 GPL-3.0，接收者对符合许可的副本享有再分发权利，
+本条不构成为许可附加限制。)

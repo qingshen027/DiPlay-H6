@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:name="com.shilapi.xcertplay.DiPlayApplication"
+        android:allowBackup="false"
+        android:fullBackupContent="@xml/backup_rules"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:icon="@drawable/ic_carplay"
+        android:label="@string/app_name"
+        android:localeConfig="@xml/locales_config"
+        android:roundIcon="@drawable/ic_carplay"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Xcertplay">
+
+        <!-- Mirrors the common-module declaration: Direct Boot aware so LOCKED_BOOT_COMPLETED
+             (delivered seconds after boot, vs BOOT_COMPLETED delayed ~45s by this ROM) can start
+             the resident listener early. -->
+        <receiver
+            android:name="com.shilapi.xcertplay.BootReceiver"
+            android:directBootAware="true"
+            android:enabled="true"
+            tools:replace="android:enabled" />
+
+        <service android:name="com.shilapi.xcertplay.shared.MyCarAppService" tools:node="remove" />
+        <meta-data android:name="androidx.car.app.minCarApiLevel" tools:node="remove" />
+    </application>
+
+</manifest>

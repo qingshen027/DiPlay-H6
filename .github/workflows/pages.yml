@@ -1,0 +1,22 @@
+name: Publish download site
+
+# DiPlay-H6 adaptation.
+#
+# Upstream publishes a download site whose buttons link to the upstream APK on
+# shihabal3amri/DiPlay/releases. That is wrong for this fork: this repository
+# deliberately distributes NO APK, and linking out to a third party's APK would
+# misrepresent the source and send readers to a binary that is not this fork.
+#
+# The workflow is therefore disabled for the H6 adaptation. The page content in
+# site/content.json also still describes the BYD-targeted upstream product.
+#
+# To re-enable a site for this fork you would need to:
+#   - rewrite scripts/build_site.py so BASE and REPO point at THIS repository
+#   - remove the download button entirely (there is no APK to link to), or point
+#     it at an in-group file whose location you control
+#   - update site/content.json so the copy describes Haval H6, not BYD
+#
+# See README-H6.md for the distribution-boundary rationale.
+
+on:
+  workflow_dispatch:
